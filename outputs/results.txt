@@ -1,5 +1,7 @@
 Total detections: 144
 Estimated parameters:
+x0: 164
+y0: 593
 vx0: 252.194
 vy0: 346.478
 k: 0.0638786

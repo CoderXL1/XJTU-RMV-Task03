@@ -32,6 +32,8 @@ void print_summary(const ceres::Solver::Summary& summary)
 void print_results(const TASK03::Params& params)
 {
     std::cout << "Estimated parameters:\n";
+    std::cout << "x0: " << TASK03::x0 << "\n";
+    std::cout << "y0: " << TASK03::y0 << "\n";
     std::cout << "vx0: " << params.vx0 << "\n";
     std::cout << "vy0: " << params.vy0 << "\n";
     std::cout << "k: " << exp(params.k_log) << "\n";
@@ -56,7 +58,7 @@ int main()
     // std::cout<<TASK03::x0<<","<<TASK03::y0<<","<<TASK03::w<<","<<TASK03::h<<std::endl;
     // return 0;
     summary = TASK03::solve(raw, params, fps);
-    // print_summary(summary);
+    print_summary(summary);
     print_results(params);
     return 0;
 }
