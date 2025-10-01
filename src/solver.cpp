@@ -43,7 +43,7 @@ namespace TASK03
             problem.AddResidualBlock(cf, nullptr, params.v);
         }
         ceres::Solver::Options options;
-        options.max_num_iterations = 500;
+        options.max_num_iterations = 10;
         options.linear_solver_type = ceres::DENSE_QR;
         options.minimizer_progress_to_stdout = true;
 

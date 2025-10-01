@@ -84,7 +84,7 @@ namespace TASK03
         // std::cout << "Total frames: " << frame_count << "\n";
         raw.clear();
         raw.reserve(frame_count);
-        for(int i=1;i<=frame_count;i++)
+        for(int i=0;i<frame_count;i++)
         {
             TASK03::Measurement meas;
             cap>>frame;
