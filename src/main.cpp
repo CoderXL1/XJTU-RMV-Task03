@@ -52,6 +52,8 @@ int main()
     print_raw();
     TASK03::x0 = raw.front().x;
     TASK03::y0 = raw.front().y; 
+    // std::cout<<TASK03::x0<<","<<TASK03::y0<<","<<TASK03::w<<","<<TASK03::h<<std::endl;
+    // return 0;
     summary = TASK03::solve(raw, params, fps);
     print_summary(summary);
     print_results(params);
