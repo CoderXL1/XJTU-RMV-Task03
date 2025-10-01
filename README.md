@@ -27,6 +27,6 @@ k: 0.0638786
 g: 497.486
 ```
 
-更多运行结果详见 `outputs/results.txt`
+更多运行结果详见 `outputs/`
 
 ![运行结果截图](outputs/results.png)

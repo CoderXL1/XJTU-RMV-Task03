@@ -27,6 +27,7 @@ void print_raw()
 void print_summary(const ceres::Solver::Summary& summary)
 {
     std::cout << summary.BriefReport() << "\n";
+    std::cout << summary.FullReport() << "\n";
 }
 void print_results(const TASK03::Params& params)
 {
@@ -49,13 +50,13 @@ int main()
         return -1;
     }
     std::cout << "Total detections: " << raw.size() << "\n";
-    print_raw();
+    // print_raw();
     TASK03::x0 = raw.front().x;
     TASK03::y0 = raw.front().y; 
     // std::cout<<TASK03::x0<<","<<TASK03::y0<<","<<TASK03::w<<","<<TASK03::h<<std::endl;
     // return 0;
     summary = TASK03::solve(raw, params, fps);
-    print_summary(summary);
+    // print_summary(summary);
     print_results(params);
     return 0;
 }
